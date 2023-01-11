@@ -13,10 +13,13 @@ const app = Vue.createApp({
     },
     methods: {
         addNewTask(){
-            if (this.newTask) this.tasks.push(newTask);
+            if (this.newTask) {
+                this.tasks.push(this.newTask);
+                this.newTask = '';
+            }
         },
         removeTask(index){
-            return this.tasks.shift(index)
+            this.tasks.shift(index);
         }
     }
 });
