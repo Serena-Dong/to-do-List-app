@@ -16,38 +16,43 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <!-- JS -->
-    <script src="./js/script.js"></script>
+    <script defer src="./js/script.js"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="row justify-content-center align-items-center flex-column">
-                <div class="col-4 bg-white mt-5 mb-3">
-                    <div class="logo">
-                        <img src="./img/logo.png" alt="">
+    <div id="root">
+
+        <header>
+            <div class="container">
+                <div class="row justify-content-center align-items-center flex-column">
+                    <div class="col-4 bg-white mt-5 mb-3">
+                        <div class="logo">
+                            <img class="img-fluid" src="./img/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="input-control col-5 mb-4">
+                        <form action="">
+                            <input type="text" placeholder="Nuova Task" class=" px-4 py-2 rounded-3" v-model.trim="newTask">
+                            <button type="button" class="btn btn-outline-success m-2 p-2 rounded-3" @click="addNewTask">Aggiungi</button>
+                        </form>
                     </div>
                 </div>
-                <div class="col-5 mb-4">
-                    <form action="">
-                        <input type="text" value="Nuova Task" class="px-4 py-2 rounded-3">
-                    <button class="m-2 p-2 rounded-3">Aggiungi</button>
-                    </form>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row">
+            
+                    <div class="col-12 bg-secondary rounded">
+                        <ul class="list-group m-5 text-light">
+                            <li v-for="(task, i) in tasks" class="list-group-item  p-2 border-bottom">
+                                {{ task }}
+                            </li>
+                            
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 bg-secondary rounded">
-                    <ul class="list-group p-5 text-light">
-                        <li class="list-group-item  p-2 border-bottom">Fare i compiti</li>
-
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </main>
-</body>
-</html>
+        </main>
+    </div>
+    </body>
+    </html>
