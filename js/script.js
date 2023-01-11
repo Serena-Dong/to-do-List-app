@@ -14,6 +14,9 @@ const app = Vue.createApp({
     methods: {
         addNewTask(){
             if (this.newTask) this.tasks.push(newTask);
+        },
+        removeTask(index){
+            return this.tasks.shift(index)
         }
     }
 });
