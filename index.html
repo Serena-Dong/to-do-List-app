@@ -44,8 +44,9 @@
             
                     <div class="col-12 bg-secondary rounded">
                         <ul class="list-group m-5 text-light">
-                            <li v-for="(task, i) in tasks" class="list-group-item  p-2 border-bottom" @click="removeTask(i)">
+                            <li v-for="(task, i) in tasks" class="list-group-item  py-2 border-bottom d-flex justify-content-between align-items-center">
                                 {{ task }}
+                            <button class="btn" @click="removeTask(i)">X</button>
                             </li>
                             
                         </ul>
