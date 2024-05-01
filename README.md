@@ -37,10 +37,6 @@ To run the To-Do List App on your local machine, follow these steps: <br>
 
 Contributions to this project are welcome. If you want to contribute new features, improve the design, or fix issues, please feel free to submit pull requests.
 
-## 📝 License
-
-This project is licensed under the MIT License. For more information, refer to the [LICENSE](LICENSE) file.
-
 ## 📬 Contact
 
 - Developer: Serena Dong <br>
