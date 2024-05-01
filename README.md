@@ -27,11 +27,9 @@ The To-Do List App is a web application that allows users to create, update, and
 To run the To-Do List App on your local machine, follow these steps: <br>
 1. **Clone the Repository**: Clone this repository to your local machine: <br>
 
-2. **Navigate to the Project Directory**: Change your working directory to the project folder: <br>
+2. **Install Dependencies**: Install the project dependencies using npm: <br>
 
-3. **Install Dependencies**: Install the project dependencies using npm: <br>
-
-4. **Run the Application**: Start the development server and open the app in your browser:
+3. **Run the Application**: Start the development server and open the app in your browser:
 
 ## 🤝 Contribution
 
