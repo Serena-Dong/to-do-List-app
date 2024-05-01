@@ -1,22 +1,71 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: sans-serif;
-    background-color: rgba(0, 0, 0, 0.877);
+    background-color: #ffffff;
 }
 
 /*----------------*/
 
-input{
-    width: 77%;
+input {
+    width: 100%;
 }
 
-ul li{
+ul li {
     cursor: pointer;
 }
-ul li:hover{
+
+ul li:hover {
     color: grey;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone {
+    width: 360px;
+    height: 744px;
+    border: 1rem solid black;
+    border-radius: 3rem;
+}
+
+.status-bar {
+    height: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-bar .details {}
+
+.status-bar .bar {
+    height: 20px;
+    background-color: black;
+    border-radius: 3rem;
+}
+
+.status-bar .details,
+.status-bar .time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5rem;
+}
+
+.fa-solid {
+    font-size: 0.8rem;
 }
