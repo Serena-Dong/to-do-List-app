@@ -5,9 +5,6 @@ const app = Vue.createApp({
             tasks: [
                 'Send the project to the client',
                 'Cook the dinner',
-                'Take the dog for a walk',
-                'Send the project to the client',
-                'Cook the dinner',
                 'Take the dog for a walk'
             ],
         }

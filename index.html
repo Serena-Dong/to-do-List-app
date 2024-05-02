@@ -57,7 +57,7 @@
                                 <p>| {{ task }}</p>
                                 <p class="check" @click="removeTask(i)"><i class="fa-solid fa-check"></i></p>
                             </div>
-                            <div v-if="!tasks" class="text-done text-center my-5 text-secondary">
+                            <div v-if="tasks.length === 0" class="text-done text-center my-5 text-secondary">
                                 <p>Great job! <br> Your list is empty.</p>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                         <div class="input-card d-flex align-items-center">
                             <form action="" class="col-12">
                                 <input type="text" placeholder="New Task" v-model.trim="newTask">
-                                <button type="button" @click="addNewTask">Add</button>
+                                <button type="button" @enter="addNewTask" @click="addNewTask">Add</button>
                             </form>
                         </div>
                     </div>
