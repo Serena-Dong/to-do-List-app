@@ -87,7 +87,3 @@ p {
     align-items: center;
     flex-direction: column;
 }
-
-.content .content-header .title h2 {
-    font-weight: 700;
-}
