@@ -24,65 +24,38 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="phone">
-            <div class="status-bar">
-                <div class="col-4 time">
-                    <p>12:00</p>
-                </div>
-                <div class="col-4 bar"></div>
-                <div class="col-4 details ">
-                    <i class="fa-solid fa-signal"></i>
-                    <i class="fa-solid fa-wifi"></i>
-                    <i class="fa-solid fa-battery-full"></i>
-                </div>
-            </div>
-            <div class="content"></div>
-        </div>
-    </div>
     <div id="root">
-        <!-- <header>
-            <div class="container">
-                <div class="row justify-content-center align-items-center flex-column">
-                    <div class="col-4 bg-white mt-5 mb-3">
-                        <div class="logo">
-                            <img class="img-fluid" src="./img/logo.png" alt="">
+        <div class="container">
+            <div id="phone">
+                <div class="status-bar col-12">
+                    <div class="col-4 time">
+                        <p>12:00</p>
+                    </div>
+                    <div class="col-4 bar"></div>
+                    <div class="col-4 details ">
+                        <i class="fa-solid fa-signal"></i>
+                        <i class="fa-solid fa-wifi"></i>
+                        <i class="fa-solid fa-battery-full"></i>
+                    </div>
+                </div>
+                <div class="content col-12">
+                    <div class="content-header col-12 d-flex justify-space-between">
+                        <div class="title col-10">
+                            <h2>Tuesday</h2>
+                        </div>
+                        <div class="date col-2">
+                            <h6>19</h6>
+                            <h6>MAR</h6>
                         </div>
                     </div>
-                    <div class=" col-5 mb-4">
-                        <form action="">
-                            <input type="text" placeholder="New Task" class=" px-4 py-2 rounded-3"
-                                v-model.trim="newTask">
-                            <button type="button" class="btn btn-outline-success m-2 p-2 rounded-3"
-                                @click="addNewTask">Add</button>
-                        </form>
-                    </div>
                 </div>
             </div>
-        </header>
-        <main>
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-12 bg-secondary rounded">
-                        <ul class="list-group m-5 text-light">
-                            <li v-for="(task, i) in tasks"
-                                class="list-group-item  py-2 border-bottom d-flex justify-content-between align-items-center">
-                                {{ task }}
-
-                                <button class="btn" @click="removeTask(i)">X</button>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </main> -->
-    </div>
-    <div class="smartphone">
-        <div class="content">
         </div>
     </div>
+
+
+
+
 </body>
 
 </html>

@@ -30,26 +30,33 @@ p {
 .container {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.phone {
-    width: 360px;
+/* PHONE Layout */
+#phone {
     height: 744px;
+    width: 360px;
     border: 1rem solid black;
     border-radius: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #ffffff;
 }
 
+/* Status Bar */
 .status-bar {
-    height: 40px;
+    height: 10%;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.status-bar .details {}
 
 .status-bar .bar {
     height: 20px;
@@ -68,4 +75,19 @@ p {
 
 .fa-solid {
     font-size: 0.8rem;
+}
+
+/* Content */
+.content {
+    height: 90%;
+    padding: 1.5rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .content-header .title h2 {
+    font-weight: 700;
 }
