@@ -1,4 +1,4 @@
-# 🎵 To-do List Project
+# ✏️ To-do List Project
 
 Welcome to the To-do List App!
 
