@@ -148,6 +148,7 @@ p {
 .input-card input {
     width: 90%;
     height: 100%;
+    padding-left: 0.5rem;
     border: none;
     background-color: #ffffff00;
 }
