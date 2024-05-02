@@ -45,12 +45,8 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background-color: rgba(231, 198, 16, 0.824); */
-    /* background-color: rgb(215, 215, 215); */
     color: #000000;
-    background-color: rgb(215, 215, 215);
-
-
+    background-color: white;
 }
 
 /* Status Bar */
@@ -105,10 +101,10 @@ p {
 }
 
 .content-footer {
-    height: 10%;
+    height: 13.8%;
 
     overflow: auto;
-    border-radius: 1rem;
+    border-radius: 1rem 1rem 2.2rem 2.2rem;
 }
 
 /* To do Card */
