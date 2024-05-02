@@ -45,13 +45,17 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* background-color: rgba(231, 198, 16, 0.824); */
+    /* background-color: rgb(215, 215, 215); */
+    color: #000000;
+    background-color: rgb(215, 215, 215);
 
-    background-color: #ffffff;
+
 }
 
 /* Status Bar */
 .status-bar {
-    height: 10%;
+    height: 5%;
 
     display: flex;
     justify-content: space-between;
@@ -79,11 +83,80 @@ p {
 
 /* Content */
 .content {
-    height: 90%;
-    padding: 1.5rem;
+    height: 95%;
 
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+}
+
+.content-header {
+    padding: 1.5rem;
+}
+
+.content-main {
+    height: 70%;
+    overflow: auto;
+
+    border-radius: 1rem;
+    background-color: white;
+
+}
+
+.content-footer {
+    height: 10%;
+
+    overflow: auto;
+    border-radius: 1rem;
+}
+
+/* To do Card */
+.to-do-items {
+    min-height: 200px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.to-do-items .item {
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 1rem;
+    background-color: #cfcfcf;
+    color: black;
+
+    margin-bottom: 0.5rem;
+}
+
+.check {
+    cursor: pointer;
+}
+
+.check:hover {
+    color: green;
+}
+
+/* Input card */
+.input-card {
+    height: 100%;
+    padding: 1rem;
+    background-color: rgb(215, 215, 215);
+    z-index: 1;
+    border-radius: 1rem;
+}
+
+.input-card input {
+    width: 90%;
+    height: 100%;
+    border: none;
+    background-color: #ffffff00;
+}
+
+.input-card button {
+    background-color: #00000000;
+    border: none;
 }
