@@ -21,13 +21,10 @@ const app = Vue.createApp({
             this.tasks.shift(index);
         },
         currentDate() {
-            const date = `${this.current.getDate()}`;
-            return date;
+            return `${this.current.getDate()}`;
         },
         currentMonth() {
-            const month = this.current.toLocaleString('default', { month: 'long' });
-
-            return month;
+            return this.current.toLocaleString('default', { month: 'long' });
         },
         currentDay() {
             const day = this.current.getDay();
@@ -37,8 +34,7 @@ const app = Vue.createApp({
         currentTime() {
             const hours = this.current.getHours();
             const minutes = this.current.getMinutes();
-            const time = hours + ":" + minutes;
-            return time;
+            return time = hours + ":" + minutes;;
         }
     }
 });
