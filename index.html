@@ -29,7 +29,7 @@
             <div id="phone">
                 <div class="status-bar col-12">
                     <div class="col-4 time">
-                        <p>12:00</p>
+                        <p>{{currentTime()}}</p>
                     </div>
                     <div class="col-4 bar"></div>
                     <div class="col-4 details ">
@@ -39,13 +39,13 @@
                     </div>
                 </div>
                 <div class="content col-12">
-                    <div class="content-header col-12 d-flex justify-space-between">
+                    <div class="content-header col-12 d-flex justify-space-between align-items-center">
                         <div class="title col-10">
-                            <h1>Tuesday</h1>
+                            <h1>{{currentDay()}}</h1>
                         </div>
                         <div class="date col-2">
-                            <h5>19</h5>
-                            <h5>MAR</h5>
+                            <h5>{{currentDate()}}</h5>
+                            <h5>{{currentMonth()}}</h5>
                         </div>
                     </div>
                     <div class="content-main col-12">
@@ -54,7 +54,7 @@
                                 <h4 class="">To-do List</h4>
                             </div>
                             <div v-for="(task, i) in tasks" class="item p-2">
-                                <p>| {{ task }}</p>
+                                <p>- {{ task }}</p>
                                 <p class="check" @click="removeTask(i)"><i class="fa-solid fa-check"></i></p>
                             </div>
                             <div v-if="tasks.length === 0" class="text-done text-center my-5 text-secondary">
