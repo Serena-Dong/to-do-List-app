@@ -96,7 +96,7 @@ p {
     overflow: auto;
 
     border-radius: 1rem;
-    background-color: white;
+    background-color: #ffffff;
 
 }
 
@@ -108,25 +108,43 @@ p {
 }
 
 /* To do Card */
-.to-do-items {
+.content-card {
     min-height: 200px;
     padding: 1.5rem;
     border-radius: 1rem;
+}
 
+.to-do-items {
     background-color: #ffffff;
     color: #000000;
 }
 
-.to-do-items .item {
+.done-items {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.content-card .item {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
 
+.to-do-items .item {
     border-radius: 1rem;
     background-color: #cfcfcf;
     color: black;
 
-    margin-bottom: 0.5rem;
 }
+
+.done-items .item {
+    border-radius: 1rem;
+    background-color: #00fd0d;
+    color: white;
+
+}
+
+
 
 .check {
     cursor: pointer;

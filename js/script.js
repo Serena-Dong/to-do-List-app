@@ -7,8 +7,11 @@ const app = Vue.createApp({
                 'Cook the dinner',
                 'Take the dog for a walk'
             ],
+            doneTasks: [],
             current: new Date()
         }
+    },
+    computed: {
     },
     methods: {
         addNewTask() {
@@ -19,6 +22,10 @@ const app = Vue.createApp({
         },
         removeTask(index) {
             this.tasks.shift(index);
+        },
+        setDone(index) {
+            this.doneTasks.push(this.tasks[index]);
+            this.tasks.splice(index, 1);
         },
         currentDate() {
             return `${this.current.getDate()}`;
@@ -37,6 +44,7 @@ const app = Vue.createApp({
             return time = hours + ":" + minutes;;
         }
     }
+
 });
 
 app.mount('#root');
