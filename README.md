@@ -12,7 +12,7 @@ The To-Do List App is a web application that allows users to create, update, and
 - 📝 Add New Tasks: Easily add new tasks to your to-do list.
 - ✏️ Edit Tasks: Update task details or descriptions.
 - ✔️ Mark as Complete: Mark tasks as completed when finished.
-- 🗑️ Delete Tasks: Remove tasks from your to-do list
+- 🗑️ Delete Tasks: Remove tasks from your to-do list.
 
 ## 🛠️ Technologies Used
 
