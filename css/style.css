@@ -139,19 +139,40 @@ p {
 
 .done-items .item {
     border-radius: 1rem;
-    background-color: #00fd0d;
+    background-color: #008000;
     color: white;
 
 }
 
 
 
-.check {
+.check,
+.remove,
+.edit,
+.save {
     cursor: pointer;
 }
 
 .check:hover {
-    color: green;
+    color: #008000;
+}
+
+.remove:hover {
+    color: #ff0000;
+}
+
+.edit:hover {
+    color: #ffdd00;
+}
+
+.save:hover {
+    color: #FFFFFF;
+}
+
+/* Input-edit */
+.input-edit {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 }
 
 /* Input card */
