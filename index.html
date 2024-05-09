@@ -50,16 +50,30 @@
                     </div>
                     <div class="content-main col-12">
                         <div class="content-card to-do-items">
+
                             <div class="title mb-3">
                                 <h4>✏️ To-do List</h4>
                             </div>
+
                             <div v-for="(task, i) in tasks" class="item p-2">
-                                <p>- {{ task }}</p>
-                                <p class="check" @click="setDone(i)"><i class="fa-solid fa-check"></i></p>
+                                <p v-if="!taskEdit[i]">- {{ task }}</p>
+                                <input v-else class="input-edit" type="text" v-model.trim="editedTask"
+                                    @keydown.enter="saveEditedTask(i)">
+                                <div v-if="!taskEdit[i]" class="d-flex gap-2">
+                                    <span class="check" @click="doneTask(i)"><i class="fa-solid fa-check"></i></span>
+                                    <span class="remove" @click="removeTask(i)"><i class="fa-solid fa-trash"></i></span>
+                                    <span class="edit" @click="editTask(i)"><i class="fa-solid fa-pen"></i></span>
+                                </div>
+                                <div v-else class="d-flex gap-2">
+                                    <span class="save" @click="saveEditedTask(i)"><i
+                                            class="fa-regular fa-floppy-disk"></i></span>
+                                </div>
                             </div>
+
                             <div v-if="tasks.length === 0" class="text-done text-center my-5 text-secondary">
                                 <p>Great job! <br> Your list is empty.</p>
                             </div>
+
                         </div>
                         <div class="content-card done-items">
                             <div class="title mb-3">
@@ -74,7 +88,7 @@
                         <div class="input-card d-flex align-items-center">
                             <form action="" class="col-12">
                                 <input type="text" placeholder="New Task" v-model.trim="newTask">
-                                <button type="button" @enter="addNewTask" @click="addNewTask">Add</button>
+                                <button type="button" @click="addNewTask">Add</button>
                             </form>
                         </div>
                     </div>

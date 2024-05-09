@@ -2,8 +2,10 @@ const app = Vue.createApp({
     data() {
         return {
             newTask: '',
+            editedTask: '',
+            taskEdit: Array(this.tasks).fill(false), // Changed to an array to track editing per task
             tasks: [
-                'Send the project to the client',
+                'Call the client',
                 'Cook the dinner',
                 'Take the dog for a walk'
             ],
@@ -21,11 +23,21 @@ const app = Vue.createApp({
             }
         },
         removeTask(index) {
-            this.tasks.shift(index);
-        },
-        setDone(index) {
-            this.doneTasks.push(this.tasks[index]);
             this.tasks.splice(index, 1);
+        },
+        doneTask(index) {
+            this.doneTasks.push(this.tasks[index]);
+            this.removeTask(index);
+        },
+        editTask(index) {
+            this.taskEdit[index] = true; // Set the taskEdit flag for the specified task
+            this.editedTask = this.tasks[index]; // Set the editedTask to the current task content
+        },
+        saveEditedTask(index) {
+            if (this.editedTask.trim() !== '') {
+                this.tasks[index] = this.editedTask.trim();
+                this.taskEdit[index] = false; // Reset the taskEdit flag for the specified task
+            }
         },
         currentDate() {
             return `${this.current.getDate()}`;
