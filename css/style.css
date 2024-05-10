@@ -30,8 +30,35 @@ p {
 .container {
     height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+.section {
+    margin-bottom: 3rem;
+}
+
+.icon {
+    padding-left: 0 !important;
+}
+
+.icon li {
+    margin: 1.5rem 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.icon li .img-container {
+    width: 30px;
+    height: auto;
+
+    margin-right: 1rem;
+}
+
+.icon li .img-container img {
+    width: 100%;
+    object-fit: cover;
 }
 
 /* PHONE Layout */
